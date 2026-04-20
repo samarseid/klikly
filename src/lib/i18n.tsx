@@ -219,7 +219,7 @@ const dictionaries: Record<Lang, Dict> = {
     "problem.kicker": "Muammo",
     "problem.title": "Bozor parchalangan, sekin va xavfli",
     "problem.subtitle":
-      "Odamlar 10+ ilova ishlatadi, soxta e’lonlarga duch keladi va tasdiqlanmagan ustalar bilan soatlab gaplashadi.",
+      "Odamlar 10+ ilova ishlatadi, soxta e’lonlarga duch keladi va tasdiqlanmagan ishchilar (kunlik ishcilar) bilan soatlab gaplashadi.",
     "problem.scenario.title": "Hayotiy holat",
     "problem.scenario.body":
       "“Foydalanuvchi Telegramda eski e’lonlarni 3–5 soat varaqlaydi, oxirida o‘tgan haftada ijaraga berilgan kvartira egasiga qo‘ng‘iroq qiladi. Keyin elektrik uchun alohida saytni qidiradi — reyting yoki kafolat yo‘q.”",
@@ -227,7 +227,7 @@ const dictionaries: Record<Lang, Dict> = {
     "problem.list.0.body": "Foydalanuvchilar 10+ platformani — e’lonlar, chatlar, agentlarni qo‘llaydi.",
     "problem.list.1.title": "Soxta va eskirgan e’lonlar",
     "problem.list.1.body": "Mulk e’lonlarining 40% gacha eskirgan yoki firibgarlik.",
-    "problem.list.2.title": "Ustalar uchun ishonch tizimi yo‘q",
+    "problem.list.2.title": "Ischilar uchun ishonch tizimi yo‘q",
     "problem.list.2.body": "Yollash og‘zaki tavsiyaga asoslanadi — reyting va kafolat yo‘q.",
     "problem.list.3.title": "Soatlab muzokara",
     "problem.list.3.body": "Qo‘lda narx aniqlash va uzun yozishmalar vaqtni yo‘qotadi.",
@@ -239,7 +239,7 @@ const dictionaries: Record<Lang, Dict> = {
     "solution.kicker": "Yechim",
     "solution.title": "Klikly hammasini bitta intellektual qatlamda birlashtiradi",
     "solution.subtitle":
-      "Tasdiqlangan e’lonlar, AI moslashuv, eskrow to‘lovlar va ishonchli ustalar tarmog‘i — bitta Super ilovada.",
+      "Tasdiqlangan e’lonlar, AI moslashuv, eskrow to‘lovlar va ishonchli ischilar tarmog‘i — bitta Super ilovada.",
     "solution.steps.0.title": "1. Klikly’ga nima kerakligini ayting",
     "solution.steps.0.body":
       "Yozing yoki ayting: “Metro yaqinida 2 xonali, $600 gacha” yoki “bugun lustra uchun elektrik”.",
@@ -265,7 +265,7 @@ const dictionaries: Record<Lang, Dict> = {
     "business.streams.1.label": "Premium e’lonlar",
     "business.streams.1.value": "$5–$50",
     "business.streams.1.desc": "Ajratilgan mulk e’loni uchun.",
-    "business.streams.2.label": "Usta obunasi",
+    "business.streams.2.label": "Ishchi obunasi",
     "business.streams.2.value": "$10/oy",
     "business.streams.2.desc": "Mutaxassislar uchun Pro tarif.",
     "business.streams.3.label": "Reklama",
@@ -374,9 +374,9 @@ const dictionaries: Record<Lang, Dict> = {
     "download.users.title": "Klikly Foydalanuvchilar uchun",
     "download.users.body": "Uy toping va mutaxassislarni yollang.",
     "download.users.cta": "Foydalanuvchilar ilovasi",
-    "download.workers.title": "Klikly Ustalar uchun",
+    "download.workers.title": "Klikly Ishchilar uchun",
     "download.workers.body": "Ish toping, obro‘ qozoning, ko‘proq ishlang.",
-    "download.workers.cta": "Ustalar ilovasi",
+    "download.workers.cta": "Ishchilar ilovasi",
 
     "footer.tagline": "Ko‘chmas mulk va xizmatlar uchun yagona Super ilova.",
     "footer.product": "Mahsulot",
