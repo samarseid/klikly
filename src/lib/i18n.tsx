@@ -452,7 +452,7 @@ const dictionaries: Record<Lang, Dict> = {
     "chatbot.error.generic": "Xatolik yuz berdi. Qayta urinib ko‘ring.",
 
     "demo.kicker": "Harakatda ko‘ring",
-    "demo.title": "Kelajakni 90 soniyada tushuning.",
+    "demo.title": "Kelajakni 200 soniyada tushuning.",
     "demo.subtitle":
       "Qidiruv, AI moslashuv, buyurtma, to‘lov, baho — bir oqimda, hech qanday ishqalanish.",
     "demo.cta": "Demo ko‘rish",
