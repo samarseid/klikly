@@ -32,14 +32,14 @@ export function SiteHeader() {
       <div className="section-shell flex h-18 items-center justify-between py-4">
 
         {/* LOGO */}
-        <Link to="/" className="group flex items-center gap-10.5">
+        <Link to="/" className="group flex items-center gap-2.5">
           <img
-            key={theme} // 🔥 smooth refresh uchun
+           
             src={currentLogo}
             alt="Klikly app preview"
-            className="relative top-2.5 z-10 size-full object-contain animate-float transition-all duration-300"
-            width={120}
-            height={120}
+            className="h-9 w-auto object-contain transition-transform group-hover:scale-105"
+             width={36}
+            height={36}
           />
         </Link>
 
