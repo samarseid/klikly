@@ -32,16 +32,25 @@ export function SiteHeader() {
       <div className="section-shell flex h-18 items-center justify-between py-4">
 
         {/* LOGO */}
-        <Link to="/" className="group flex items-center gap-2.5">
-          <img
-           
-            src={currentLogo}
-            alt="Klikly app preview"
-            className="h-9 w-auto object-contain transition-transform group-hover:scale-105"
-             width={36}
-            height={36}
-          />
-        </Link>
+<Link to="/" className="group flex items-center gap-2.5">
+  {/* LIGHT */}
+  <img
+    src={logoLight}
+    alt="Klikly logo"
+    className="h-9 w-auto object-contain transition-transform group-hover:scale-105 dark:hidden"
+    width={36}
+    height={36}
+  />
+
+  {/* DARK */}
+  <img
+    src={logoDark}
+    alt="Klikly logo"
+    className="h-9 w-auto object-contain transition-transform group-hover:scale-105 hidden dark:block"
+    width={36}
+    height={36}
+  />
+</Link>
 
   <nav className="hidden items-center gap-8 lg:flex">
           {NAV_ITEMS.map((item) => (
