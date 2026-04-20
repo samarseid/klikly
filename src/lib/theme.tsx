@@ -12,7 +12,7 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
 const STORAGE_KEY = "klikly-theme";
 
-// 👇 DOIMO LIGHT default
+// 🔥 ENG MUHIM — initial theme
 function getInitialTheme(): Theme {
   if (typeof window === "undefined") return "light";
 
@@ -23,22 +23,17 @@ function getInitialTheme(): Theme {
       return stored;
     }
 
-    return "light"; // 👈 fallback ham LIGHT
+    return "light";
   } catch {
     return "light";
   }
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  // 👇 default LIGHT
-  const [theme, setThemeState] = useState<Theme>("light");
+  // 🔥 FIX: function orqali initialize
+  const [theme, setThemeState] = useState<Theme>(getInitialTheme);
 
-  // 👇 sahifa ochilganda tekshiradi
-  useEffect(() => {
-    setThemeState(getInitialTheme());
-  }, []);
-
-  // 👇 DOM + localStorage sync
+  // 🔥 DOM + localStorage sync
   useEffect(() => {
     const root = document.documentElement;
 
@@ -47,9 +42,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
     try {
       window.localStorage.setItem(STORAGE_KEY, theme);
-    } catch {
-      // ignore
-    }
+    } catch {}
   }, [theme]);
 
   const setTheme = (t: Theme) => setThemeState(t);
