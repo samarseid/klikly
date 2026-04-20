@@ -43,8 +43,7 @@ export function SiteHeader() {
           />
         </Link>
 
-        {/* DESKTOP NAV */}
-        <nav className="hidden items-center gap-8 lg:flex">
+  <nav className="hidden items-center gap-8 lg:flex">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.key}
@@ -56,24 +55,15 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        {/* RIGHT SIDE */}
         <div className="flex items-center gap-3">
-
-          {/* THEME BUTTON */}
           <button
             type="button"
             onClick={toggleTheme}
             aria-label="Toggle theme"
             className="inline-flex size-9 items-center justify-center rounded-full border border-border bg-secondary/50 text-foreground transition-colors hover:bg-secondary"
           >
-            {theme === "dark" ? (
-              <Sun className="size-4" />
-            ) : (
-              <Moon className="size-4" />
-            )}
+            {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
           </button>
-
-          {/* LANGUAGE */}
           <div className="hidden items-center gap-0.5 rounded-full border border-border bg-secondary/50 p-1 sm:flex">
             {langs.map((l) => (
               <button
@@ -91,16 +81,12 @@ export function SiteHeader() {
               </button>
             ))}
           </div>
-
-          {/* DOWNLOAD BUTTON */}
           <a
             href="#download"
             className="hidden rounded-full bg-gradient-brand px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-brand-soft transition-transform hover:scale-105 sm:inline-flex"
           >
             {t("nav.download")}
           </a>
-
-          {/* MOBILE MENU BUTTON */}
           <button
             type="button"
             className="inline-flex items-center justify-center rounded-md p-2 text-foreground lg:hidden"
@@ -112,11 +98,9 @@ export function SiteHeader() {
         </div>
       </div>
 
-      {/* MOBILE MENU */}
       {open && (
         <div className="border-t border-white/5 bg-background/95 backdrop-blur-xl lg:hidden">
           <div className="section-shell flex flex-col gap-4 py-6">
-
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.key}
@@ -127,8 +111,6 @@ export function SiteHeader() {
                 {t(item.key)}
               </a>
             ))}
-
-            {/* MOBILE LANG */}
             <div className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1 self-start sm:hidden">
               {langs.map((l) => (
                 <button
@@ -137,17 +119,13 @@ export function SiteHeader() {
                   onClick={() => setLang(l)}
                   className={cn(
                     "rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-widest",
-                    lang === l
-                      ? "bg-gradient-brand text-white"
-                      : "text-muted-foreground",
+                    lang === l ? "bg-gradient-brand text-white" : "text-muted-foreground",
                   )}
                 >
                   {l}
                 </button>
               ))}
             </div>
-
-            {/* MOBILE DOWNLOAD */}
             <a
               href="#download"
               onClick={() => setOpen(false)}
@@ -155,7 +133,6 @@ export function SiteHeader() {
             >
               {t("nav.download")}
             </a>
-
           </div>
         </div>
       )}
