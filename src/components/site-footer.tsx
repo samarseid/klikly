@@ -3,8 +3,8 @@ import { useTheme } from "@/lib/theme";
 import { Instagram, Twitter, Linkedin, Mail } from "lucide-react";
 
 // LOGOLAR
-import logoDark from "@/assets/Logo.png";        // dark uchun
-import logoLight from "@/assets/logo-light.png"; // light uchun
+import logoDark from "@/assets/logo-light.png";        // dark uchun
+import logoLight from "@/assets/Logo.png"; // light uchun
 
 export function SiteFooter() {
   const { t } = useI18n();
