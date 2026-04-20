@@ -128,8 +128,8 @@ const dictionaries: Record<Lang, Dict> = {
     "business.streams.4.value": "$5/mo",
     "business.streams.4.desc": "Priority matching, market insights.",
     "business.proj.title": "Trajectory",
-    "business.proj.y1": "Year 1 · 10,000 active users in Tashkent",
-    "business.proj.y2": "Year 2 · 50,000 users across 3 cities",
+    "business.proj.y1": "Year 1 · 100,000 active users in Tashkent",
+    "business.proj.y2": "Year 2 · 500,000 users across 3 cities",
     "business.proj.y3": "Year 3 · ARPU $12 · gross margin >70%",
     "business.proj.note":
       "Capital-light, two-sided liquidity. Every city we densify lifts margin and lowers acquisition cost — the playbook compounds.",
@@ -363,8 +363,8 @@ const dictionaries: Record<Lang, Dict> = {
     "business.streams.4.value": "$5/oy",
     "business.streams.4.desc": "Ustuvor moslashuv, bozor tahlillari.",
     "business.proj.title": "Trayektoriya",
-    "business.proj.y1": "1-yil · Toshkentda 10,000 faol foydalanuvchi",
-    "business.proj.y2": "2-yil · 3 shaharda 50,000 foydalanuvchi",
+    "business.proj.y1": "1-yil · Toshkentda 100,000 faol foydalanuvchi",
+    "business.proj.y2": "2-yil · 3 shaharda 500,000 foydalanuvchi",
     "business.proj.y3": "3-yil · ARPU $12 · marja >70%",
     "business.proj.note":
       "Kapitalga oz ehtiyojli, ikki tomonlama likvidlik. Har bir zichlashgan shahar marjani oshiradi va jalb qilish narxini pasaytiradi.",
@@ -598,8 +598,8 @@ const dictionaries: Record<Lang, Dict> = {
     "business.streams.4.value": "$5/мес",
     "business.streams.4.desc": "Приоритетный подбор и аналитика.",
     "business.proj.title": "Траектория",
-    "business.proj.y1": "1-й год · 10 000 активных пользователей в Ташкенте",
-    "business.proj.y2": "2-й год · 50 000 пользователей в 3 городах",
+    "business.proj.y1": "1-й год · 100 000 активных пользователей в Ташкенте",
+    "business.proj.y2": "2-й год · 500 000 пользователей в 3 городах",
     "business.proj.y3": "3-й год · ARPU $12 · маржа >70%",
     "business.proj.note":
       "Лёгкая капиталом, двусторонняя ликвидность. Чем плотнее город — тем выше маржа и ниже стоимость привлечения.",
