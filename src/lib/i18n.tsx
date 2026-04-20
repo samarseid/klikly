@@ -254,16 +254,16 @@ const dictionaries: Record<Lang, Dict> = {
     "hero.title1": "Qaerda yashashing va qanday yashashing uchun",
     "hero.title2": "operatsion tizim.",
     "hero.subtitle":
-      "Klikly parchalangan e’lonlar, brokerlar va chat-guruhlarni bitta AI Super ilovaga aylantiradi — tasdiqlangan e’lonlar, ishonchli ustalar, eskrow to‘lovlar, 30 soniyada.",
+      "Klikly tarqoq va tizimsiz e’lonlar, brokerlar va chat-guruhlarni bitta AI Super ilovaga aylantiradi — tasdiqlangan e’lonlar, ishonchli ishchilar, eskrow to‘lovlar, 30 soniyada.",
     "hero.cta.demo": "Kelajakni sinab ko‘ring",
     "hero.cta.download": "Erta foydalanish",
     "hero.trust": "Toshkent · Almati · Bishkekdagi erta foydalanuvchilar ishonchini qozondi",
     "hero.stat1": "Tasdiqlangan e’lonlar",
-    "hero.stat2": "Tekshirilgan ustalar",
+    "hero.stat2": "Tekshirilgan ishchilarlar",
     "hero.stat3": "AI moslashuv",
 
     "problem.kicker": "Nima buzilgan",
-    "problem.title": "Bugun uy yoki usta topish — o‘rta asrlarcha jarayon.",
+    "problem.title": "Bugun uy yoki ishchi (kunlik xizmatchilar) topish — o‘rta asrlarcha jarayon.",
     "problem.subtitle":
       "10+ ilova. Soxta e’lonlar. Naqd kelishuv. Mas’uliyat yo‘q. Million soat va milliard dollar — ishlamayotgan bozorga sarflanmoqda.",
     "problem.scenario.title": "Toshkentda oddiy seshanba",
@@ -275,7 +275,7 @@ const dictionaries: Record<Lang, Dict> = {
     "problem.list.1.title": "40% gacha soxta yoki eskirgan",
     "problem.list.1.body":
       "E’lonlar ijaradan keyin haftalab turadi. Suratlar o‘g‘irlangan, narxlar — quroq.",
-    "problem.list.2.title": "Ustalar uchun mas’uliyat yo‘q",
+    "problem.list.2.title": "Ischilarlar uchun mas’uliyat yo‘q",
     "problem.list.2.body":
       "Yollash — og‘zaki ruletka. ID yo‘q, reyting yo‘q, sug‘urta yo‘q. Bir yomon ish — barcha zarar sizniki.",
     "problem.list.3.title": "Soatlab muzokara",
@@ -313,7 +313,7 @@ const dictionaries: Record<Lang, Dict> = {
     "trust.subtitle":
       "Tasdiqlangan shaxslar, eskrow’da ushlangan mablag‘ va bozordan ustun kafolat — va’da bilan emas, dizayn bilan.",
     "trust.stats.0.value": "4.9★",
-    "trust.stats.0.label": "Usta reytingi",
+    "trust.stats.0.label": "Ischi reytingi",
     "trust.stats.0.note": "Pilot loyihalardagi o‘rtacha",
     "trust.stats.1.value": "100%",
     "trust.stats.1.label": "Tasdiqlangan e’lonlar",
@@ -353,7 +353,7 @@ const dictionaries: Record<Lang, Dict> = {
     "business.streams.1.label": "Premium e’lonlar",
     "business.streams.1.value": "$5–$50",
     "business.streams.1.desc": "Egalar va agentlar uchun.",
-    "business.streams.2.label": "Usta obunasi",
+    "business.streams.2.label": "Ischi obunasi",
     "business.streams.2.value": "$10/oy",
     "business.streams.2.desc": "Tasdiqlangan mutaxassislar uchun Pro.",
     "business.streams.3.label": "Sponsorlik joyi",
@@ -378,7 +378,7 @@ const dictionaries: Record<Lang, Dict> = {
       "O‘zbek, rus, ingliz. Kalit so‘zni emas, niyatni va shoshilinchlikni tushunadi.",
     "ai.modules.1.title": "Tavsiyalar dvigateli",
     "ai.modules.1.body":
-      "Xulq, joylashuv, byudjet va turmush tarzi signallaridan e’lon va ustalarni saralaydi.",
+      "Xulq, joylashuv, byudjet va turmush tarzi signallaridan e’lon va xizmatchilarni saralaydi.",
     "ai.modules.2.title": "Adolatli narx modeli",
     "ai.modules.2.body":
       "Mintaqaviy taqqoslama va mavsumiylik asosida real vaqtdagi narx prognozi.",
@@ -395,7 +395,7 @@ const dictionaries: Record<Lang, Dict> = {
     "roadmap.1.body": "Asosiy oqimlar, AI prototipi, pilot e’lonlar.",
     "roadmap.1.tag": "Hozir",
     "roadmap.2.title": "MVP",
-    "roadmap.2.body": "Toshkentda beta — tasdiqlangan e’lonlar va 1,000 usta.",
+    "roadmap.2.body": "Toshkentda beta — tasdiqlangan e’lonlar va 1,000 ischilar.",
     "roadmap.2.tag": "3 oy",
     "roadmap.3.title": "Ommaviy ishga tushirish",
     "roadmap.3.body": "Marketing, eskrow ishga tushadi, pullik jalb qilish.",
@@ -428,7 +428,7 @@ const dictionaries: Record<Lang, Dict> = {
     "why.0.title": "Tajribali jamoa",
     "why.0.body": "Real mahsulot yetkazgan operatorlar.",
     "why.1.title": "Haqiqiy bozor og‘rig‘i",
-    "why.1.body": "Ijarachilar, egalar va ustalar tasdiqlagan talab.",
+    "why.1.body": "Ijarachilar, egalar va xizmatchilar tasdiqlagan talab.",
     "why.2.title": "Tezkor rivojlanish",
     "why.2.body": "MVP 90 kunda — birinchi kundan AI bilan.",
     "why.3.title": "AI-birinchi ustunlik",
@@ -441,9 +441,9 @@ const dictionaries: Record<Lang, Dict> = {
     "chatbot.placeholder": "Kvartira, xizmat, narx, eskrow haqida so‘rang…",
     "chatbot.send": "Yuborish",
     "chatbot.greeting":
-      "Salom — men Klikly AI’man. Kvartira topish, usta yollash, eskrow yoki ishga tushish rejalari haqida so‘rang.",
+      "Salom — men Klikly AI’man. Kvartira topish, xizmat yollash, eskrow yoki ishga tushish rejalari haqida so‘rang.",
     "chatbot.q.0": "Chilonzor metrosi yaqinida $500 gacha 2 xonali toping",
-    "chatbot.q.1": "Usta meni aldamasligiga qanday ishonch hosil qilasiz?",
+    "chatbot.q.1": "Ishchi meni aldamasligiga qanday ishonch hosil qilasiz?",
     "chatbot.q.2": "Klikly e’lonlarni qanday tekshiradi?",
     "chatbot.q.3": "Biznes modelingiz qanday?",
     "chatbot.error.network": "Aloqa xatosi. Qayta urinib ko‘ring.",
@@ -462,13 +462,13 @@ const dictionaries: Record<Lang, Dict> = {
     "download.subtitle":
       "Bozorning ikkala tomoni uchun — tajriba hech qachon uzilmaydi.",
     "download.users.title": "Klikly Foydalanuvchilar uchun",
-    "download.users.body": "Uy toping. Usta yollang. Xavfsiz to‘lang.",
+    "download.users.body": "Uy toping. Ischi yollang. Xavfsiz to‘lang.",
     "download.users.cta": "Foydalanuvchi ilovasi",
-    "download.workers.title": "Klikly Ustalar uchun",
+    "download.workers.title": "Klikly Xizmatchilar uchun",
     "download.workers.body": "Ish toping. Obro‘ qozoning. Ko‘proq ishlang.",
-    "download.workers.cta": "Usta ilovasi",
+    "download.workers.cta": "Ischi ilovasi",
 
-    "footer.tagline": "Qaerda yashashing va qanday yashashing uchun Super ilova.",
+    "footer.tagline": "Qayerda yashashing va qanday yashashing uchun Super ilova.",
     "footer.product": "Mahsulot",
     "footer.company": "Kompaniya",
     "footer.legal": "Huquqiy",
