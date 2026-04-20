@@ -18,7 +18,6 @@ export function HeroSection() {
   return (
     <section id="home" className="relative pt-12 pb-24 sm:pt-20 sm:pb-32">
       <div className="section-shell grid items-center gap-16 lg:grid-cols-12">
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -33,43 +32,44 @@ export function HeroSection() {
             {t("hero.badge")}
           </div>
 
-          <h1 className="text-balance text-5xl font-bold leading-[1.0] tracking-tighter sm:text-6xl lg:text-7xl">
-            {t("hero.title1")} <br />
+          <h1 className="text-balance text-5xl font-bold leading-[1.0] tracking-tighter sm:text-6xl lg:text-[5.25rem]">
+            {t("hero.title1")}{" "}
             <span className="text-gradient-brand">{t("hero.title2")}</span>
           </h1>
 
-          <p className="max-w-[52ch] text-pretty text-lg text-muted-foreground sm:text-xl">
+          <p className="max-w-[56ch] text-pretty text-lg text-muted-foreground sm:text-xl">
             {t("hero.subtitle")}
           </p>
 
           <div className="flex flex-wrap items-center gap-4">
             <a
-              href="#demo"
+              href="#download"
               className="group inline-flex items-center gap-2 rounded-xl bg-gradient-brand px-7 py-4 text-base font-semibold text-primary-foreground shadow-brand-soft transition-transform hover:scale-105"
             >
-              {t("hero.cta.demo")}
+              {t("hero.cta.download")}
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </a>
-
             <a
-              href="#download"
-              className="glass-card inline-flex items-center gap-2 rounded-xl px-7 py-4 text-base font-semibold transition-colors hover:bg-white/8"
+              href="#demo"
+              className="glass-card inline-flex items-center gap-2 rounded-xl px-7 py-4 text-base font-semibold transition-colors hover:border-primary/40"
             >
-              <Download className="size-4" />
-              {t("hero.cta.download")}
+              {t("hero.cta.demo")}
             </a>
           </div>
 
-          <div className="flex flex-wrap items-center gap-x-10 gap-y-4 pt-6">
-            <Stat icon={ShieldCheck} value="14,000+" label={t("hero.stat1")} />
-            <div className="hidden h-8 w-px bg-white/10 sm:block" />
-            <Stat icon={Sparkles} value="3,000" label={t("hero.stat2")} />
-            <div className="hidden h-8 w-px bg-white/10 sm:block" />
+          <div className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+            {t("hero.trust")}
+          </div>
+
+          <div className="flex flex-wrap items-center gap-x-10 gap-y-4 pt-2">
+            <Stat icon={ShieldCheck} value="14,200+" label={t("hero.stat1")} />
+            <div className="hidden h-8 w-px bg-border sm:block" />
+            <Stat icon={Sparkles} value="2,850" label={t("hero.stat2")} />
+            <div className="hidden h-8 w-px bg-border sm:block" />
             <Stat icon={Zap} value="0.8s" label={t("hero.stat3")} />
           </div>
         </motion.div>
 
-        {/* IMAGE SIDE */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -77,49 +77,45 @@ export function HeroSection() {
           className="relative lg:col-span-6"
         >
           <div className="relative mx-auto aspect-square w-full max-w-[560px]">
-
-            {/* Glow */}
             <div
               className="absolute inset-10 rounded-full blur-[80px]"
-              style={{
-                background:
-                  theme === "dark"
-                    ? "oklch(0.62 0.19 255 / 0.45)"
-                    : "oklch(0.75 0.18 255 / 0.25)",
-              }}
+              style={{ background: "oklch(0.62 0.19 255 / 0.45)" }}
               aria-hidden
             />
-
-            {/* HERO IMAGE (SWAP) */}
             <img
               src={heroMockup}
               alt="Klikly app preview"
-              className="relative z-10 size-full object-contain animate-float transition-all duration-500"
+              className="relative z-10 size-full object-contain animate-float"
               width={1024}
               height={1024}
             />
 
-            {/* Floating cards unchanged */}
-            <div className="glass-card absolute left-0 top-12 z-20 hidden rounded-2xl p-4 sm:block">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
+              className="glass-card absolute left-0 top-12 z-20 hidden rounded-2xl p-4 sm:block"
+            >
               <div className="flex items-center gap-3">
                 <div className="size-2 rounded-full bg-emerald-400 animate-pulse-glow" />
                 <div>
-                  <div className="text-xs font-semibold">AI Match Found</div>
-                  <div className="text-[10px] text-muted-foreground">
-                    98% confidence
-                  </div>
+                  <div className="text-xs font-semibold">AI Match · 0.8s</div>
+                  <div className="text-[10px] text-muted-foreground">98% confidence</div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="glass-card absolute -right-2 bottom-16 z-20 hidden w-56 space-y-2 rounded-2xl p-4 sm:block">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1, duration: 0.6 }}
+              className="glass-card absolute -right-2 bottom-16 z-20 hidden w-56 space-y-2 rounded-2xl p-4 sm:block"
+            >
               <div className="flex items-center justify-between">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-                  Market Pulse
+                  Escrow Released
                 </span>
-                <span className="text-[10px] font-bold text-emerald-400">
-                  +4.2%
-                </span>
+                <span className="text-[10px] font-bold text-emerald-400">+$340</span>
               </div>
               <div className="flex h-10 items-end gap-1">
                 {[40, 60, 90, 70, 50, 80, 95].map((h, i) => (
@@ -130,8 +126,7 @@ export function HeroSection() {
                   />
                 ))}
               </div>
-            </div>
-
+            </motion.div>
           </div>
         </motion.div>
       </div>
@@ -150,14 +145,12 @@ function Stat({
 }) {
   return (
     <div className="flex items-center gap-3">
-      <div className="rounded-lg border border-white/10 bg-white/5 p-2 text-primary">
+      <div className="rounded-lg border border-border bg-secondary/50 p-2 text-primary">
         <Icon className="size-4" />
       </div>
       <div>
         <div className="text-lg font-bold tabular-nums">{value}</div>
-        <div className="text-[10px] uppercase tracking-widest text-muted-foreground">
-          {label}
-        </div>
+        <div className="text-[10px] uppercase tracking-widest text-muted-foreground">{label}</div>
       </div>
     </div>
   );
