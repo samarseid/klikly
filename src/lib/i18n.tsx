@@ -217,7 +217,7 @@ const dictionaries: Record<Lang, Dict> = {
     "chatbot.error.generic": "Something went wrong. Please try again.",
 
     "demo.kicker": "See it in action",
-    "demo.title": "90 seconds to understand the future.",
+    "demo.title": "200 seconds to understand the future.",
     "demo.subtitle":
       "Search, AI match, book, pay, rate — one flow, zero friction. This is what every city deserves.",
     "demo.cta": "Watch demo",
@@ -687,7 +687,7 @@ const dictionaries: Record<Lang, Dict> = {
     "chatbot.error.generic": "Что-то пошло не так. Попробуйте ещё раз.",
 
     "demo.kicker": "Смотрите в действии",
-    "demo.title": "90 секунд, чтобы понять будущее.",
+    "demo.title": "200 секунд, чтобы понять будущее.",
     "demo.subtitle":
       "Поиск, ИИ-подбор, бронь, оплата, оценка — один поток, ноль трения.",
     "demo.cta": "Смотреть демо",
