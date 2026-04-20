@@ -35,7 +35,7 @@ export function SiteHeader() {
 <Link to="/" className="group flex items-center gap-2.5">
   {/* LIGHT */}
   <img
-    src={logoLight}
+    src={logoDark}
     alt="Klikly logo"
     className="h-9 w-auto object-contain transition-transform group-hover:scale-105 dark:hidden"
     width={36}
@@ -44,7 +44,7 @@ export function SiteHeader() {
 
   {/* DARK */}
   <img
-    src={logoDark}
+    src={logoLight}
     alt="Klikly logo"
     className="h-9 w-auto object-contain transition-transform group-hover:scale-105 hidden dark:block"
     width={36}
