@@ -7,6 +7,7 @@ import { BusinessSection } from "@/components/sections/business";
 import { AISection } from "@/components/sections/ai";
 import { RoadmapSection } from "@/components/sections/roadmap";
 import { TeamSection } from "@/components/sections/team";
+import { InvestmentSection } from "@/components/sections/investment";
 import { WhyUsSection } from "@/components/sections/why-us";
 import { ChatbotSection } from "@/components/sections/chatbot";
 import { DemoSection } from "@/components/sections/demo";
@@ -27,6 +28,7 @@ function Index() {
       <BusinessSection />
       <RoadmapSection />
       <TeamSection />
+      <InvestmentSection />
       <WhyUsSection />
       <ChatbotSection />
       <DemoSection />
